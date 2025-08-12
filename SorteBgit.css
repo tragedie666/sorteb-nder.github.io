@@ -1,0 +1,87 @@
+/* GENERELLE INNSTILLINGER */
+body {
+  background-color: #1a1310;
+  color: #e2d6c6;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* INTRO-TEKSTBOKS */
+.intro {
+  font-size: 18px;
+  color: #e2d6c6;
+  line-height: 1.7;
+  background-color: #211914;
+  padding: 15px 20px;
+  border-left: 5px solid #8a715d;
+  margin-bottom: 2em;
+  max-width: 800px;
+}
+
+/* OVERSKRIFTER */
+h4 {
+  font-size: 24px;
+  color: #f0e6d5;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* TABELLSTIL */
+table.table-invitation {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+table.table-invitation th,
+table.table-invitation td {
+  border: 1px solid #3d312b;
+  padding: 8px 12px;
+  vertical-align: top;
+  color: #e2d6c6;
+}
+
+table.table-invitation th {
+  background-color: #2a211d;
+  font-weight: bold;
+}
+
+table.table-invitation tr:nth-child(even) {
+  background-color: #2c221e;
+}
+
+td.center {
+  text-align: center;
+}
+
+/* MENYLINJE */
+.top-bar,
+.header,
+.main-header,
+.menu-line {
+  background-color: #2b201b !important; /* Mørkere brun */
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* MENYELEMENTER */
+.top-bar a,
+.header a,
+.main-header a,
+.menu-line a {
+  color: #e2d6c6 !important;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+/* HOVER-EFFEKT */
+.top-bar a:hover,
+.header a:hover,
+.main-header a:hover,
+.menu-line a:hover {
+  background-color: #3d2f29 !important; /* Litt lysere brun */
+  color: #fff7ec !important;
+}
