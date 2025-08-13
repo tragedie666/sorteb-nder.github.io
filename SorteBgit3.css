@@ -69,7 +69,8 @@ a:hover {
     color: #f5d78e !important;
 }
 
-/* Fjern lys bakgrunn som kan komme fra temaet */
-body, table, td, th {
-    background-color: transparent !important;
+/* Fjern lys bakgrunn som kan komme fra temaet, uten å fjerne våre farger */
+html, body {
+    background-color: #241b15 !important;
 }
+
