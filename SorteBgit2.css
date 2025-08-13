@@ -1,0 +1,35 @@
+/* Mørk meny som standard */
+.navbar, 
+.menu, 
+#menu, 
+table[width="100%"][cellspacing="0"] {
+    background-color: #3b2b1f !important; /* Mørk brun */
+    color: #ffffff !important;
+}
+
+/* Lenker i menyen */
+.navbar a, 
+.menu a, 
+#menu a, 
+table[width="100%"][cellspacing="0"] a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+/* Hover-effekt: litt lysere */
+.navbar a:hover, 
+.menu a:hover, 
+#menu a:hover, 
+table[width="100%"][cellspacing="0"] a:hover {
+    background-color: #5a4030 !important; /* Litt lysere brun */
+    color: #ffffff !important;
+}
+
+/* Sørg for at tabellceller i menyen også får mørk bakgrunn */
+.navbar td, 
+.menu td, 
+#menu td, 
+table[width="100%"][cellspacing="0"] td {
+    background-color: #3b2b1f !important;
+}
