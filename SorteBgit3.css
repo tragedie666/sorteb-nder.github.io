@@ -1,0 +1,75 @@
+/* Global bakgrunn og tekst */
+body {
+    background-color: #241b15 !important; /* Mørk bakgrunn */
+    color: #ffffff !important; /* Lys tekst */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menylinje */
+nav, .menu, .navbar {
+    background-color: #3b2b1f !important; /* Mørk brun */
+    padding: 10px 0;
+}
+
+nav a, .menu a, .navbar a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+nav a:hover, .menu a:hover, .navbar a:hover {
+    background-color: #5a4231 !important; /* Litt lysere brun */
+    color: #f5d78e !important; /* Lys gull ved hover */
+}
+
+/* Tabeller */
+table {
+    background-color: #3b2b1f !important;
+    color: #ffffff !important;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    background-color: #5a4231 !important;
+    font-weight: bold;
+    padding: 8px;
+}
+
+table td {
+    padding: 8px;
+    border: 1px solid #ffffff33;
+}
+
+/* Skjemaer */
+input, textarea, select, button {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #f5d78e;
+    outline: none;
+}
+
+/* Lenker generelt */
+a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f5d78e !important;
+}
+
+/* Fjern lys bakgrunn som kan komme fra temaet */
+body, table, td, th {
+    background-color: transparent !important;
+}
