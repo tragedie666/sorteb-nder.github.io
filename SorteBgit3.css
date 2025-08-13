@@ -1,7 +1,11 @@
+/* ============================= */
+/*  Sorte Bønder - Global stil   */
+/* ============================= */
+
 /* Global bakgrunn og tekst */
-body {
-    background-color: #241b15 !important; /* Mørk bakgrunn */
-    color: #ffffff !important; /* Lys tekst */
+html, body, body > form {
+    background-color: #1a1310 !important; /* Mørk bakgrunn */
+    color: #e2d6c6 !important;            /* Lys, varm tekst */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,7 +18,7 @@ nav, .menu, .navbar {
 }
 
 nav a, .menu a, .navbar a {
-    color: #ffffff !important;
+    color: #e2d6c6 !important;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
@@ -23,13 +27,13 @@ nav a, .menu a, .navbar a {
 
 nav a:hover, .menu a:hover, .navbar a:hover {
     background-color: #5a4231 !important; /* Litt lysere brun */
-    color: #f5d78e !important; /* Lys gull ved hover */
+    color: #ffdd99 !important;            /* Lys gull ved hover */
 }
 
 /* Tabeller */
 table {
     background-color: #3b2b1f !important;
-    color: #ffffff !important;
+    color: #e2d6c6 !important;
     border-collapse: collapse;
     width: 100%;
 }
@@ -47,8 +51,8 @@ table td {
 
 /* Skjemaer */
 input, textarea, select, button {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #ffffff !important;
+    color: #000000 !important;
     border: 1px solid #ccc;
     padding: 6px;
     border-radius: 4px;
@@ -61,16 +65,73 @@ input:focus, textarea:focus, select:focus {
 
 /* Lenker generelt */
 a {
-    color: #ffffff !important;
+    color: #e2d6c6 !important;
     text-decoration: none;
 }
 
 a:hover {
-    color: #f5d78e !important;
+    color: #ffdd99 !important;
 }
 
-/* Fjern lys bakgrunn som kan komme fra temaet, uten å fjerne våre farger */
-html, body {
-    background-color: #241b15 !important;
+/* ============================= */
+/*  Overstyr lyse bakgrunner     */
+/* ============================= */
+
+/* Overstyr alle hvite "bgcolor" som temaet putter inn */
+[bgcolor="#ffffff" i],
+[bgcolor="#fff" i],
+[bgcolor="white" i] {
+    background-color: #1a1310 !important;
+    color: #e2d6c6 !important;
 }
 
+/* Overstyr lyseblå meny- og headerbakgrunner */
+[bgcolor="#f0ffff" i] {
+    background-color: #3f3026 !important; /* Mørk menybakgrunn */
+    color: #f0e6d5 !important;
+}
+
+[bgcolor="#f0ffff" i] td,
+[bgcolor="#f0ffff" i] a {
+    background-color: transparent !important;
+    color: #f0e6d5 !important;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+[bgcolor="#f0ffff" i] a:hover {
+    color: #ffdd99 !important;
+}
+
+[bgcolor="#f0ffff" i] td:hover {
+    background-color: #5c4638 !important; /* Litt lysere ved hover */
+}
+
+/* Tabeller generelt */
+table {
+    border-collapse: collapse !important;
+}
+
+table th, table td {
+    border: 1px solid #3d312b !important;
+    padding: 8px 12px !important;
+}
+
+/* Gjør tabelloverskrifter tydelige på mørk bakgrunn */
+table th {
+    background-color: #2a211d !important;
+    color: #e2d6c6 !important;
+}
+
+/* Skjemaer - lyse felter for kontrast */
+input, textarea, select, button {
+    background-color: #ffffff !important;
+    color: #1a1310 !important;
+    border: 1px solid #8a715d !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none !important;
+    border-color: #ffdd99 !important;
+    box-shadow: 0 0 0 2px #ffdd9933 !important;
+}
