@@ -1,0 +1,117 @@
+/* ====== GLOBALT ====== */
+body {
+  background-color: #0d0d0d; /* nesten sort */
+  color: #e6e6e6;
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ====== MENYLINJEN (gammel kode + moderne) ====== */
+#TopMeny_EnrollLnk,
+#TopMeny_InvitasjonLnk,
+#TopMeny_EnrolledLnk,
+#TopMeny_PairingsLnk,
+#TopMeny_ResultatLnk,
+#TopMeny_SokTurneringLnk,
+#TopMeny_RundeRapportLnk,
+#TopMeny_LivePartiLnk,
+.top-bar a,
+.header a,
+.main-header a,
+.menu-line a {
+  color: #e6e6e6 !important;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+#TopMeny_EnrollLnk:hover,
+#TopMeny_InvitasjonLnk:hover,
+#TopMeny_EnrolledLnk:hover,
+#TopMeny_PairingsLnk:hover,
+#TopMeny_ResultatLnk:hover,
+#TopMeny_SokTurneringLnk:hover,
+#TopMeny_RundeRapportLnk:hover,
+#TopMeny_LivePartiLnk:hover,
+.top-bar a:hover,
+.header a:hover,
+.main-header a:hover,
+.menu-line a:hover {
+  background-color: #330000 !important; /* rød hover */
+  color: #ff3b3b !important;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+/* ====== TABELLER ====== */
+#DataGrid1,
+#SummaryPanel,
+table.table-invitation {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  font-size: 15px;
+}
+
+#DataGrid1 th,
+table.table-invitation th {
+  background-color: #1a1a1a;
+  color: #ff3b3b;
+  border: 1px solid #333;
+  padding: 8px 12px;
+}
+
+#DataGrid1 td,
+table.table-invitation td {
+  border: 1px solid #333;
+  padding: 8px 12px;
+  color: #e6e6e6;
+}
+
+#DataGrid1 tr:nth-child(even),
+table.table-invitation tr:nth-child(even) {
+  background-color: #141414;
+}
+
+#DataGrid1 tr:hover,
+table.table-invitation tr:hover {
+  background-color: #330000;
+  color: #fff;
+}
+
+/* ====== OVERSKRIFTER ====== */
+h1, h2, h3, h4,
+#TurnHeader_TurnNavnLbl {
+  color: #ff3b3b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#TurnHeader_TurnNavnLbl {
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 2px solid #ff3b3b;
+  padding-bottom: 0.3em;
+}
+
+/* ====== LENKER GENERELT ====== */
+a {
+  color: #ff3b3b;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ====== DETALJER ====== */
+.intro {
+  font-size: 18px;
+  background-color: #141414;
+  padding: 15px 20px;
+  border-left: 5px solid #ff3b3b;
+  margin-bottom: 2em;
+  max-width: 800px;
+}
